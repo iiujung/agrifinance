@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif,Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 400px;
+  right: 15%;
+  top: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: start;
+}
+
+section.service {
+  background-color: #F3F3F3;
+  position: relative;
+}
+
+section.service::after {
+  content: '';
+  width: 100%;
+  height: 188px;
+  background: url("../images/service-decoration.png") center center no-repeat;
+  position: absolute;
+  bottom: -120px;
+  z-index: -1;
+}
+
+section.service .service_tab .tab-pane .container {
+  border-radius: 20px;
+}
+
+section.service .service_tab .title {
+  position: relative;
+}
+
+section.service .service_tab .title::before {
+  content: '';
+  width: 100%;
+  height: 20px;
+  background: url("../images/decoration-line.png") center center no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+}
+
+.cta-btn {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  z-index: 5;
+  padding: 12px 36px;
+}
+
+.section_title {
+  position: relative;
+}
+
+.section_title::after {
+  content: '';
+  width: 100%;
+  height: 44px;
+  background: url("../images/title-decoration-green.svg") center center no-repeat;
+  position: absolute;
+  top: 44px;
+  left: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*# sourceMappingURL=all.css.map */
