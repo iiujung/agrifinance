@@ -1,2 +1,2 @@
 ## github pages
-https://iiujung.github.io/oui-organic/
+https://iiujung.github.io/agrifinance/
