@@ -11,6 +11,34 @@ img {
      object-fit: cover;
 }
 
+.section_title {
+  position: relative;
+}
+
+.section_title::after {
+  content: "";
+  width: 100%;
+  height: 44px;
+  background: url("../images/title-decoration-green.svg") center center no-repeat;
+  position: absolute;
+  top: 44px;
+  left: 0;
+}
+
+.section_title-gold {
+  position: relative;
+}
+
+.section_title-gold::after {
+  content: "";
+  width: 100%;
+  height: 44px;
+  background: url("../images/title-decoration-gold.svg") center center no-repeat;
+  position: absolute;
+  top: 44px;
+  left: 0;
+}
+
 .carousel-caption {
   position: absolute;
   width: 400px;
@@ -23,31 +51,32 @@ img {
   text-align: start;
 }
 
-section.service {
-  background-color: #F3F3F3;
+.section_service {
+  background-color: #f3f3f3;
   position: relative;
 }
 
-section.service::after {
-  content: '';
+.section_service::after {
+  content: "";
   width: 100%;
   height: 188px;
-  background: url("../images/service-decoration.png") center center no-repeat;
+  background: url("../images/service-decoration.png") top left no-repeat;
+  background-size: cover;
   position: absolute;
-  bottom: -120px;
+  bottom: -150px;
   z-index: -1;
 }
 
-section.service .service_tab .tab-pane .container {
+.section_service .service_tab .tab-pane .container {
   border-radius: 20px;
 }
 
-section.service .service_tab .title {
+.section_service .service_tab .title {
   position: relative;
 }
 
-section.service .service_tab .title::before {
-  content: '';
+.section_service .service_tab .title::before {
+  content: "";
   width: 100%;
   height: 20px;
   background: url("../images/decoration-line.png") center center no-repeat;
@@ -66,22 +95,8 @@ section.service .service_tab .title::before {
   padding: 12px 36px;
 }
 
-.section_title {
-  position: relative;
-}
-
-.section_title::after {
-  content: '';
-  width: 100%;
-  height: 44px;
-  background: url("../images/title-decoration-green.svg") center center no-repeat;
-  position: absolute;
-  top: 44px;
-  left: 0;
-}
-
 .swiper {
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 
@@ -105,6 +120,27 @@ section.service .service_tab .title::before {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.section_qa {
+  position: relative;
+}
+
+.section_qa::after {
+  content: '';
+  background: url("../images/qa-background.png") left top no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -50;
+}
+
+.section_app .card {
+  margin: 0 auto;
+  max-width: 750px;
 }
 
 /*# sourceMappingURL=all.css.map */
