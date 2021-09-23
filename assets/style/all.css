@@ -137,13 +137,20 @@ img {
 }
 
 .section_service .card::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -20%;
-  background: url("../images/right-arrow.png") center center no-repeat;
-  width: 52px;
-  height: 52px;
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .section_service .card::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    background: url("../images/right-arrow.png") center center no-repeat;
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .section_service .card:nth-child(3)::after {
@@ -283,7 +290,7 @@ img {
 
 .fixtop:hover {
   color: #287149;
-  background-color: #E6F5BC;
+  background-color: #e6f5bc;
   border: #287149 1px solid;
 }
 
