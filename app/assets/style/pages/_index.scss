@@ -8,7 +8,7 @@
     background: url("../images/title-decoration-green.svg") center center
       no-repeat;
     position: absolute;
-    top: 44px;
+    top: 15px;
     left: 0;
   }
 }
@@ -21,7 +21,7 @@
     background: url("../images/title-decoration-gold.svg") center center
       no-repeat;
     position: absolute;
-    top: 44px;
+    top: 15px;
     left: 0;
   }
 }
@@ -38,7 +38,6 @@
   color: #fff;
   text-align: start;
 }
-
 
 // 雲端櫃台 service
 .section_service {
@@ -73,6 +72,7 @@
     }
   }
 }
+
 // >> 立即申辦按鈕
 .cta-btn {
   position: absolute;
@@ -82,8 +82,7 @@
   padding: 12px 36px;
 }
 
-
-// 最新消息 news start 
+// 最新消息 news start
 // >> swiper
 .swiper {
   width: 90%;
@@ -114,27 +113,84 @@
   object-fit: cover;
 }
 
-// 常見問題 qa
-.section_qa {
-  
+// >> swipper 自訂按鈕樣式
+.div {
   position: relative;
+}
+
+.swiper-button-prev {
+  left: 50%;
+  transform: translateX(-50%);
   &::after {
-    content: '';
-    background: url("../images/qa-background.png") left top no-repeat;
-    background-size: cover;
-    position: absolute;
-    height: 200px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    z-index: -50;
+    background-size: contain;
+    color: #f3f3f3;
+    background-color: #287149;
+    padding: 20px;
+    border-radius: 35px 5px 5px 35px;
+    @include pad {
+      padding: 28px;
+      border-radius: 40px 5px 5px 40px;
+    }
+  }
+}
+.swiper-button-next {
+  
+  &::after {
+    color: #f3f3f3;
+    background-color: #287149;
+    padding: 20px;
+    border-radius: 5px 35px 35px 5px;
+    @include pad {
+      padding: 28px;
+      border-radius: 5px 40px 40px 5px;
+    }
   }
 }
 
-// 廣告區 
+// 常見問題 qa
+.section_qa {
+  background: url("../images/qa-background.png") center center no-repeat;
+  background-size: cover;
+}
+// >> 風琴選單 自訂義
+.accordion-button:focus {
+  border-color: #b68914;
+  box-shadow: 0 0 0 0.25rem rgba(158, 150, 61, 0.253);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #836210;
+  background-color: #e4d1a34b;
+}
+
+// 廣告區
 .section_app {
   .card {
     margin: 0 auto;
     max-width: 750px;
   }
 }
+
+
+//scroll to top
+.fixtop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  min-width: 42px;
+  min-height: 42px;
+  border-radius: 100%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #287149;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    color: #287149;
+    background-color: #E6F5BC;
+    border: #287149 1px solid;
+  }
+}
+

@@ -1,0 +1,40 @@
+.footer {
+  background: url("../images/footer.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 1%;
+    bottom: 80%;
+    background: url("../images/footer-decoration-left.png") center center
+      no-repeat;
+    background-size: cover;
+    height: 108px;
+    width: 78px;
+    z-index: -5;
+    @include pad {
+      bottom: 55%;
+      width: 127px;
+      height: 168px;
+
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 1%;
+    bottom: 80%;
+    background: url("../images/footer-decoration-right.png") center center
+      no-repeat;
+    background-size: cover;
+    height: 108px;
+    width: 78px;
+    z-index: -5;
+    @include pad {
+      bottom: 55%;
+      width: 127px;
+      height: 168px;
+    }
+  }
+}

@@ -13,18 +13,22 @@
   <link rel="stylesheet" href="./assets/style/all.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="icon" href="./assets/images/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 
 <body>
+  <!-- header -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="./assets/images/logo.png" alt="logo"  height="40px">
+        <img src="./assets/images/logo.png" alt="logo" height="40px">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,11 +51,20 @@
   </nav>
 
   <%- contents %>
+<!-- footer -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="footer text-center py-4">
+          <div class="text-primary fs-6">
+            <small>Copyright © 農金資訊股份有限公司 All rights reserved.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- scroll to top -->
+    <button class="fixtop" onclick="scrollTop()" id="topBtn"><i
+        class="fas fa-caret-up"></i></button>
 
-  
-  <div class="footer text-center bg-primary-light border border-primary py-2">
-    <p class="text-primary fs-6">Copyright © 農金資訊股份有限公司 All rights reserved.</p>
-  </div>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
@@ -73,6 +86,24 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+    <script>
+      var topBtn = document.getElementById("topBtn")
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          topBtn.style.display = "block";
+        } else {
+          topBtn.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
 </body>
 
