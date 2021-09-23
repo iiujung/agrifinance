@@ -71,12 +71,32 @@
       }
     }
   }
+
+  .card {
+    background: url("../images/rectangle.png") center bottom no-repeat;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -20%;
+      background: url("../images/right-arrow.png") center center no-repeat;
+      width: 52px;
+      height: 52px;
+    }
+  }
+  .card:nth-child(3){
+    &::after {
+      display: none;
+    }
+  }
 }
+
 
 // >> 立即申辦按鈕
 .cta-btn {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
   left: 50%;
   z-index: 5;
   padding: 12px 36px;
@@ -114,8 +134,14 @@
 }
 
 // >> swipper 自訂按鈕樣式
-.div {
+.news_swipper {
   position: relative;
+  .swiper-slide {
+    width: 100%;
+    @include pad {
+      width: 320px;
+    }
+  }
 }
 
 .swiper-button-prev {
@@ -144,6 +170,15 @@
       padding: 28px;
       border-radius: 5px 40px 40px 5px;
     }
+  }
+}
+
+// >> news card
+.news_swipper {
+  .card {
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
