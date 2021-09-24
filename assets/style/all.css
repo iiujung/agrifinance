@@ -15,6 +15,10 @@ img {
   max-width: 1140px;
 }
 
+.rounded_10 {
+  border-radius: 10px;
+}
+
 .footer {
   background: url("../images/footer.png") center center no-repeat;
   background-size: cover;
@@ -308,6 +312,32 @@ img {
   height: 24px;
   background-color: #287149;
   top: 0;
+}
+
+.progress_step li {
+  position: relative;
+}
+
+.progress_step li::before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 1px;
+  left: 50%;
+  top: 73%;
+  background-color: #287149;
+}
+
+.progress_step li::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  left: 45%;
+  top: 70%;
+  border-radius: 100%;
+  border: 2px solid #287149;
+  background-color: #f3f3f3;
 }
 
 /*# sourceMappingURL=all.css.map */
