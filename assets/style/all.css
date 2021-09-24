@@ -11,6 +11,10 @@ img {
      object-fit: cover;
 }
 
+.form_width {
+  max-width: 1140px;
+}
+
 .footer {
   background: url("../images/footer.png") center center no-repeat;
   background-size: cover;
@@ -289,9 +293,21 @@ img {
 }
 
 .fixtop:hover {
-  color: #287149;
-  background-color: #e6f5bc;
+  background-color: #1b4b31;
   border: #287149 1px solid;
+}
+
+.form_title {
+  position: relative;
+}
+
+.form_title::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 24px;
+  background-color: #287149;
+  top: 0;
 }
 
 /*# sourceMappingURL=all.css.map */

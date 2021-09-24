@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>
-    agrifinance-開戶流程2
+    開戶完成
   </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/bootstrap.css" />
@@ -22,7 +22,7 @@
 
 <body>
   <!-- header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="shadow-sm navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="./assets/images/logo.png" alt="logo" height="40px">
@@ -51,7 +51,36 @@
   </nav>
 
   
-<!-- footer -->
+<section class="account_form1 p-md-5 bg-light">
+    <div class="bg-white shadow-sm p-5 rounded-3">
+        <div class="container">
+            <div class="row">
+                <div class="title">恭喜完成申請</div>
+                <div class="content">
+                    親愛的貴賓您好：
+                    感謝您使用『線上預約開戶』預約成功！
+                    預約項目：開戶
+                    預約日期：2021/08/10 星期二
+                    預約有效日至：2021/08/17 星期二
+                    攜帶項目
+                    身分證、第二證照（如健保卡、駕照等）、印章（非必要）
+                    ★臨櫃辦分開戶當天未滿20歲者，請由法定代理人攜帶身分證陪同，或出具經雇主蓋印的在職證明書辦理。
+                    ★本國人如須約定英文姓名，蒞行時請提供護照。
+                    ★若您有中華民國以外稅務身分，敬請另行備妥相關稅務識別碼。
+                    為節省您於分行等候時間，歡迎多加使用農金行動銀行APP行動取號服務！
+                </div>
+            </div>
+            <div class="row">
+                <a href="index.html" type="submit" class="btn btn-primary rounded-pill">完成</a>
+                <a href="#" class="btn text-primary btn-primary-light border-primary rounded-pill">上一步</a>
+              </div>
+        </div>
+    </div>
+</section>
+
+<div class="d-md-block d-sm-none my-5">
+</div>
+    <!-- footer -->
     <div class="container-fluid">
       <div class="row">
         <div class="footer text-center py-4">
@@ -61,50 +90,15 @@
         </div>
       </div>
     </div>
-<!-- scroll to top -->
-    <button class="fixtop" onclick="scrollTop()" id="topBtn"><i
-        class="fas fa-caret-up"></i></button>
+    <!-- scroll to top -->
+    <button class="fixtop" onclick="topFunction()" id="topBtn"><i class="fas fa-caret-up"></i></button>
 
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <script>
-      var topBtn = document.getElementById("topBtn")
 
-      window.onscroll = function () { scrollFunction() };
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          topBtn.style.display = "block";
-        } else {
-          topBtn.style.display = "none";
-        }
-      }
-
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
 </body>
 
 </html>
