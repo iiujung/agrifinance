@@ -8,6 +8,33 @@ current: openaccount1
 <section class="account_form1 p-md-5 bg-light">
   <div class="bg-white shadow-sm p-5 rounded-3">
     <div class="container">
+      <div class="row">
+        <!-- 填表進度 -->
+        <ul class="progress_step d-flex list-unstyled justify-content-around">
+          <li>
+            <img class="bg-primary-light p-3 rounded_10 border border-primary" src="./assets/images/step01.svg" alt="">
+            <p class="text-primary text-center">Step 1<br /><small>條文審核</small></p>
+          </li>
+          <li>
+            <img class="bg-primary-light p-3 rounded_10 border border-primary" src="./assets/images/step02.svg" alt="">
+            <p class="text-primary text-center">Step 2<br /><small>資料填寫</small></p>
+          </li>
+          <li>
+            <img class="bg-primary-light p-3 rounded_10 border border-primary" src="./assets/images/step03.svg" alt="">
+            <p class="text-primary text-center">Step 3<br /><small>證件上傳</small></p>
+          </li>
+          <li>
+            <img class="bg-primary-light p-3 rounded_10 border border-primary" src="./assets/images/step04.svg" alt="">
+            <p class="text-primary text-center">Step 4<br /><small>資料填寫</small></p>
+          </li>
+          <li>
+            <img class="bg-primary-light p-3 rounded_10 border border-primary" src="./assets/images/step05.svg" alt="">
+            <p class="text-primary text-center">Step 5<br /><small>完稱申請</small></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
       <form>
         <div class="form_title row text-primary fs-6 border-bottom mb-3">&nbsp;&nbsp;基本資料填寫</div>
         <!-- 基本資料 -->
@@ -65,7 +92,7 @@ current: openaccount1
             <input type="text" class="form-control" id="inputLetter">
           </div>
         </div>
-    
+
         <div class="form_title row text-primary fs-6 border-bottom mb-3">&nbsp;&nbsp;存戶約定事項</div>
         <!-- 存戶約定事項 -->
         <div class="row mb-3">
@@ -99,7 +126,7 @@ current: openaccount1
             </div>
           </div>
         </div>
-        
+
         <div class="row">
           <a href="openaccount2.html" type="submit" class="btn btn-primary rounded-pill">下一步</a>
           <a href="#" class="btn text-primary btn-primary-light border-primary rounded-pill">取消</a>
