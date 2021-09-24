@@ -76,22 +76,25 @@
     background: url("../images/rectangle.png") center bottom no-repeat;
     position: relative;
     &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: -20%;
-      background: url("../images/right-arrow.png") center center no-repeat;
-      width: 52px;
-      height: 52px;
+      display: none;
+      @include pad {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -20%;
+        background: url("../images/right-arrow.png") center center no-repeat;
+        width: 52px;
+        height: 52px;
+      }
     }
   }
-  .card:nth-child(3){
+  .card:nth-child(3) {
     &::after {
       display: none;
     }
   }
 }
-
 
 // >> 立即申辦按鈕
 .cta-btn {
@@ -160,7 +163,6 @@
   }
 }
 .swiper-button-next {
-  
   &::after {
     color: #f3f3f3;
     background-color: #287149;
@@ -206,7 +208,6 @@
   }
 }
 
-
 //scroll to top
 .fixtop {
   display: none;
@@ -223,9 +224,7 @@
   color: white;
   cursor: pointer;
   &:hover {
-    color: #287149;
-    background-color: #E6F5BC;
+    background-color: darken(#287149,10%);
     border: #287149 1px solid;
   }
 }
-

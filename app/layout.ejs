@@ -22,7 +22,7 @@
 
 <body>
   <!-- header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="shadow-sm navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="./assets/images/logo.png" alt="logo" height="40px">
@@ -51,7 +51,7 @@
   </nav>
 
   <%- contents %>
-<!-- footer -->
+    <!-- footer -->
     <div class="container-fluid">
       <div class="row">
         <div class="footer text-center py-4">
@@ -61,50 +61,15 @@
         </div>
       </div>
     </div>
-<!-- scroll to top -->
-    <button class="fixtop" onclick="scrollTop()" id="topBtn"><i
-        class="fas fa-caret-up"></i></button>
+    <!-- scroll to top -->
+    <button class="fixtop" onclick="topFunction()" id="topBtn"><i class="fas fa-caret-up"></i></button>
 
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <script>
-      var topBtn = document.getElementById("topBtn")
 
-      window.onscroll = function () { scrollFunction() };
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          topBtn.style.display = "block";
-        } else {
-          topBtn.style.display = "none";
-        }
-      }
-
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
 </body>
 
 </html>

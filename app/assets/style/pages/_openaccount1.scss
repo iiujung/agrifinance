@@ -1,0 +1,11 @@
+.form_title {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 24px;
+    background-color: #287149;
+    top: 0;
+  }
+}
