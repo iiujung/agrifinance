@@ -9,7 +9,7 @@
     top: 0;
   }
 }
-
+// 進度條 網頁板
 .progress {
   &_step li{
     position: relative;
@@ -68,13 +68,78 @@
     }
   }
 }
-// 隱藏最後多的線段
+// >>隱藏最後多的線段
 .progress_step li:nth-child(5){
   &::before {
     display: none;
   }
 }
 
+// 進度條 手機板
+.progress {
+  &_sm_step li{
+    position: relative;
+    // 線段
+    &::before {
+      position: absolute;
+      content: '';
+      width: 50px;
+      height: 1px;
+      left: 50%;
+      top: 3%;
+      background-color: #c4c4c4;
+    }
+    // 點點
+    &::after { 
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      left: 45%;
+      top: 0;
+      border-radius: 100%;
+      border: 2px solid #c4c4c4;
+      background-color: #f3f3f3;
+    }
+    p {
+      color: #4B4B4B;
+    }
+  }
+  &_sm_step li.active{
+    position: relative;
+    // 線段
+    &::before {
+      position: absolute;
+      content: '';
+      width: 160px;
+      height: 1px;
+      left: 50%;
+      top: 3%;
+      background-color: #287149;
+    }
+    // 點點
+    &::after { 
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      left: 45%;
+      top: 0;
+      border-radius: 100%;
+      border: 2px solid #287149;
+      background-color: #f3f3f3;
+    }
+    p {
+      color: #287149;
+    }
+  }
+}
+// >>隱藏最後多的線段
+.progress_sm_step li:nth-child(5){
+  &::before {
+    display: none;
+  }
+}
 
 .progress_icon svg{
   background-color: #f3f3f3;
