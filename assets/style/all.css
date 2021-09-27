@@ -454,4 +454,8 @@ img {
   fill: #287149;
 }
 
+.btn--md {
+  min-width: 142px;
+}
+
 /*# sourceMappingURL=all.css.map */
