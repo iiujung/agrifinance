@@ -21,6 +21,34 @@
       height: 1px;
       left: 50%;
       top: 67%;
+      background-color: #c4c4c4;
+    }
+    // 點點
+    &::after { 
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      left: 45%;
+      top: 65%;
+      border-radius: 100%;
+      border: 2px solid #c4c4c4;
+      background-color: #f3f3f3;
+    }
+    p {
+      color: #4B4B4B;
+    }
+  }
+  &_step li.active{
+    position: relative;
+    // 線段
+    &::before {
+      position: absolute;
+      content: '';
+      width: 160px;
+      height: 1px;
+      left: 50%;
+      top: 67%;
       background-color: #287149;
     }
     // 點點
@@ -35,11 +63,29 @@
       border: 2px solid #287149;
       background-color: #f3f3f3;
     }
+    p {
+      color: #287149;
+    }
   }
 }
-
+// 隱藏最後多的線段
 .progress_step li:nth-child(5){
   &::before {
     display: none;
   }
 }
+
+
+.progress_icon svg{
+  background-color: #f3f3f3;
+  border: 1px solid #c4c4c4;
+  fill: #c4c4c4;
+}
+.progress_icon svg.active{
+  background-color: #E6F5BC;
+  border: 1px solid #287149;
+  fill: #287149;
+}
+
+
+
