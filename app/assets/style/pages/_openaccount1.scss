@@ -13,25 +13,33 @@
 .progress {
   &_step li{
     position: relative;
+    // 線段
     &::before {
       position: absolute;
       content: '';
-      width: 100px;
+      width: 160px;
       height: 1px;
       left: 50%;
-      top: 73%;
+      top: 67%;
       background-color: #287149;
     }
-    &::after {
+    // 點點
+    &::after { 
       position: absolute;
       content: '';
       width: 10px;
       height: 10px;
       left: 45%;
-      top: 70%;
+      top: 65%;
       border-radius: 100%;
       border: 2px solid #287149;
       background-color: #f3f3f3;
     }
+  }
+}
+
+.progress_step li:nth-child(5){
+  &::before {
+    display: none;
   }
 }
