@@ -321,11 +321,11 @@ img {
 .progress_step li::before {
   position: absolute;
   content: '';
-  width: 100px;
+  width: 160px;
   height: 1px;
   left: 50%;
-  top: 73%;
-  background-color: #287149;
+  top: 67%;
+  background-color: #c4c4c4;
 }
 
 .progress_step li::after {
@@ -334,10 +334,124 @@ img {
   width: 10px;
   height: 10px;
   left: 45%;
-  top: 70%;
+  top: 65%;
+  border-radius: 100%;
+  border: 2px solid #c4c4c4;
+  background-color: #f3f3f3;
+}
+
+.progress_step li p {
+  color: #4B4B4B;
+}
+
+.progress_step li.active {
+  position: relative;
+}
+
+.progress_step li.active::before {
+  position: absolute;
+  content: '';
+  width: 160px;
+  height: 1px;
+  left: 50%;
+  top: 67%;
+  background-color: #287149;
+}
+
+.progress_step li.active::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  left: 45%;
+  top: 65%;
   border-radius: 100%;
   border: 2px solid #287149;
   background-color: #f3f3f3;
+}
+
+.progress_step li.active p {
+  color: #287149;
+}
+
+.progress_step li:nth-child(5)::before {
+  display: none;
+}
+
+.progress_sm_step li {
+  position: relative;
+}
+
+.progress_sm_step li::before {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 1px;
+  left: 50%;
+  top: 3%;
+  background-color: #c4c4c4;
+}
+
+.progress_sm_step li::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  left: 45%;
+  top: 0;
+  border-radius: 100%;
+  border: 2px solid #c4c4c4;
+  background-color: #f3f3f3;
+}
+
+.progress_sm_step li p {
+  color: #4B4B4B;
+}
+
+.progress_sm_step li.active {
+  position: relative;
+}
+
+.progress_sm_step li.active::before {
+  position: absolute;
+  content: '';
+  width: 160px;
+  height: 1px;
+  left: 50%;
+  top: 3%;
+  background-color: #287149;
+}
+
+.progress_sm_step li.active::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  left: 45%;
+  top: 0;
+  border-radius: 100%;
+  border: 2px solid #287149;
+  background-color: #f3f3f3;
+}
+
+.progress_sm_step li.active p {
+  color: #287149;
+}
+
+.progress_sm_step li:nth-child(5)::before {
+  display: none;
+}
+
+.progress_icon svg {
+  background-color: #f3f3f3;
+  border: 1px solid #c4c4c4;
+  fill: #c4c4c4;
+}
+
+.progress_icon svg.active {
+  background-color: #E6F5BC;
+  border: 1px solid #287149;
+  fill: #287149;
 }
 
 /*# sourceMappingURL=all.css.map */
