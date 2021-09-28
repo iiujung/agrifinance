@@ -1,3 +1,7 @@
+// breakpoints 是在 mixins 的檔案內
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../../node_modules/bootstrap/scss/_mixins.scss";
+
 // helpers
 @import "./helpers/base";
 @import "./helpers/mixin";
