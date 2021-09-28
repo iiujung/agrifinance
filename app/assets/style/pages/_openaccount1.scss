@@ -158,3 +158,32 @@
 .btn--md {
   min-width: 142px;
 }
+
+
+.myBox {
+  border: none;
+  padding: 5px;
+  font: 16px sans-serif;
+  height: 200px;
+  overflow: scroll;
+  }
+  
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  border: 1px solid #287149;
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: #287149;  
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #1b5234;  
+  }
