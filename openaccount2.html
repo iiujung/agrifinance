@@ -18,6 +18,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/css/smart_wizard_all.min.css" rel="stylesheet"
     type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
 
@@ -191,36 +193,43 @@
           <label for="checkCard" class="col-md-5 col-form-label text-md-end">領用晶片金融卡(金融卡僅適用於台幣純款帳戶)</label>
           <div class="col-md-6">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="checkCard1" value="option1" >
+              <input class="form-check-input" type="radio" name="checkcardOption" id="checkCard1" value="option1" >
               <label class="form-check-label" for="checkCard1">申請</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="checkCard2" value="option2">
+              <input class="form-check-input" type="radio" name="checkcardOption" id="checkCard2" value="option2">
               <label class="form-check-label" for="checkCard2">不申請</label>
             </div>
           </div>
         </div>
         <div class="row mb-3 align-items-center">
-          <label for="inputTaiwan" class="col-md-5 col-form-label text-md-end">金融卡卡別</label>
+          <label for="creditcard" class="col-md-5 col-form-label text-md-end">金融卡卡別</label>
           <div class="col-md-6">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">一般晶片金融卡</label>
+              <input class="form-check-input" type="radio" name="creditcardOption" id="creditcard01" value="option1">
+              <label class="form-check-label" for="creditcard01">一般晶片金融卡</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="creditcardOption" id="creditcard02" value="option1">
+              <label class="form-check-label" for="creditcard02">特殊卡面</label>
             </div>
           </div>
         </div>
         <div class="row mb-3 align-items-center">
-          <label for="inputTaiwan" class="col-md-5 col-form-label text-md-end">附加金融卡功能</label>
+          <label for="addon" class="col-md-5 col-form-label text-md-end">附加金融卡功能</label>
           <div class="col-md-6">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">非約定帳戶轉帳</label>
+              <input class="form-check-input" type="radio" name="addonOption" id="addon01" value="option1">
+              <label class="form-check-label" for="addon01">非約定帳戶轉帳</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="addonOption" id="addon02" value="option1">
+              <label class="form-check-label" for="addon02">國內消費扣款</label>
             </div>
           </div>
         </div>
-
-        
       </form>
+      
       <div class="d-flex justify-content-center">
         <a href="openaccount1.html" class="btn text-primary btn-primary-light border-primary rounded-pill btn--md me-2">回上一步</a>
         <a href="openaccount3.html" type="submit" class="btn btn-primary rounded-pill btn--md ">下一步</a>
@@ -251,6 +260,10 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/js/jquery.smartWizard.min.js"
       type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       $(document).ready(function () {
 
@@ -259,7 +272,6 @@
 
       });
     </script>
-
 </body>
 
 </html>
