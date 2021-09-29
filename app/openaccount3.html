@@ -3,7 +3,7 @@ title: 開戶流程
 layout: ./app/layout.ejs
 engine: ejs
 current: openaccount3
-<!-- display: d-none -->
+display: d-none
 ---
 <section class="account_form1 p-md-5 bg-light">
   <div class="bg-white shadow-sm p-5 rounded-3">
@@ -93,8 +93,8 @@ current: openaccount3
         <div class="form_title row text-primary fs-6 border-bottom mb-3">&nbsp;&nbsp;上傳主要證件</div>
         <!-- 基本資料 -->
         <div class="row">
-          <div class="col-md-6">
-            <img src="./assets/images/idcard-front.png" alt="">
+          <div class="col-md-6 d-flex flex-column">
+            <img class="mb-2" src="./assets/images/idcard-front.png" alt="">
             <div class="input-group mb-3">
               <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
                 aria-label="Upload" />
@@ -103,8 +103,8 @@ current: openaccount3
               </button>
             </div>
           </div>
-          <div class="col-md-6">
-            <img src="./assets/images/idcard-back.png" alt="">
+          <div class="col-md-6 d-flex flex-column">
+            <img class="mb-2" src="./assets/images/idcard-back.png" alt="">
             <div class="input-group">
               <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
                 aria-label="Upload" />
@@ -122,8 +122,8 @@ current: openaccount3
       <form>
         <div class="form_title row text-primary fs-6 border-bottom mb-3">&nbsp;&nbsp;上傳第二證件</div>
         <div class="row">
-          <div class="col-md-6">
-            <img src="./assets/images/idcard-front.png" alt="">
+          <div class="col-md-6 d-flex flex-column">
+            <img class="mb-2" src="./assets/images/idcard-front.png" alt="">
             <div class="input-group mb-3">
               <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
                 aria-label="Upload" />
@@ -132,8 +132,8 @@ current: openaccount3
               </button>
             </div>
           </div>
-          <div class="col-md-6">
-            <img src="./assets/images/idcard-back.png" alt="">
+          <div class="col-md-6 d-flex flex-column">
+            <img class="mb-2" src="./assets/images/idcard-back.png" alt="">
             <div class="input-group">
               <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
                 aria-label="Upload" />
