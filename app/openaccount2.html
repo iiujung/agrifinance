@@ -145,36 +145,43 @@ display: d-none
           <label for="checkCard" class="col-md-5 col-form-label text-md-end">領用晶片金融卡(金融卡僅適用於台幣純款帳戶)</label>
           <div class="col-md-6">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="checkCard1" value="option1" >
+              <input class="form-check-input" type="radio" name="checkcardOption" id="checkCard1" value="option1" >
               <label class="form-check-label" for="checkCard1">申請</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="checkCard2" value="option2">
+              <input class="form-check-input" type="radio" name="checkcardOption" id="checkCard2" value="option2">
               <label class="form-check-label" for="checkCard2">不申請</label>
             </div>
           </div>
         </div>
         <div class="row mb-3 align-items-center">
-          <label for="inputTaiwan" class="col-md-5 col-form-label text-md-end">金融卡卡別</label>
+          <label for="creditcard" class="col-md-5 col-form-label text-md-end">金融卡卡別</label>
           <div class="col-md-6">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">一般晶片金融卡</label>
+              <input class="form-check-input" type="radio" name="creditcardOption" id="creditcard01" value="option1">
+              <label class="form-check-label" for="creditcard01">一般晶片金融卡</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="creditcardOption" id="creditcard02" value="option1">
+              <label class="form-check-label" for="creditcard02">特殊卡面</label>
             </div>
           </div>
         </div>
         <div class="row mb-3 align-items-center">
-          <label for="inputTaiwan" class="col-md-5 col-form-label text-md-end">附加金融卡功能</label>
+          <label for="addon" class="col-md-5 col-form-label text-md-end">附加金融卡功能</label>
           <div class="col-md-6">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">非約定帳戶轉帳</label>
+              <input class="form-check-input" type="radio" name="addonOption" id="addon01" value="option1">
+              <label class="form-check-label" for="addon01">非約定帳戶轉帳</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="addonOption" id="addon02" value="option1">
+              <label class="form-check-label" for="addon02">國內消費扣款</label>
             </div>
           </div>
         </div>
-
-        
       </form>
+      
       <div class="d-flex justify-content-center">
         <a href="openaccount1.html" class="btn text-primary btn-primary-light border-primary rounded-pill btn--md me-2">回上一步</a>
         <a href="openaccount3.html" type="submit" class="btn btn-primary rounded-pill btn--md ">下一步</a>
