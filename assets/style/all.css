@@ -65,6 +65,18 @@ img {
   }
 }
 
+.carousel-control-prev-icon {
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/slide-prev.svg");
+}
+
+.carousel-control-next-icon {
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/slide-next.svg");
+}
+
 .section_title {
   position: relative;
 }
